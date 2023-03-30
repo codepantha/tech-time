@@ -4,10 +4,14 @@ import { motion } from 'framer-motion';
 import images from '../constants/images';
 
 const Sponsors = () => (
-  <motion.div className="sponsors">
-    <div className="w-[50px] md:sponsor">
+  <motion.div
+    className="sponsors"
+    whileInView={{ opacity: [0, 1] }}
+    transition={{ duration: 0.5 }}
+  >
+    <motion.div className="w-[50px] md:sponsor">
       <img src={images.zoom} alt="zoom" />
-    </div>
+    </motion.div>
     <div className="w-[50px] md:sponsor">
       <img src={images.stripe} alt="stripe" />
     </div>
