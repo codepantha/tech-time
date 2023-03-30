@@ -1,7 +1,9 @@
+import { Header } from './containers';
+
 function App() {
   return (
-    <div className="App">
-      Hello world!
+    <div className="max-h-full">
+      <Header />
     </div>
   );
 }
