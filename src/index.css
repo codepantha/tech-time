@@ -30,4 +30,40 @@
   .desktop-menu {
     @apply hidden md:flex md:flex-row md:items-center md:gap-[10px];
   }
+
+  .previews {
+    @apply mt-8; }
+
+  /* .header-right {
+    @apply bg-[url('assets/hero.png')] bg-no-repeat bg-contain bg-center
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .previews {
+    margin: 2rem calc(100% - 62%);
+  }
+
+  .previews img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .previews {
+    margin: 2rem calc(100% - 65%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .previews {
+    margin: 2rem calc(100% - 70%);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .previews {
+    margin: 2rem calc(100% - 78%);
+  }
 }
