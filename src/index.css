@@ -1,7 +1,33 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+/* stylelint-disable at-rule-no-unknown */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: 'Satoshi', sans-serif;
+}
+
+@font-face {
+  font-family: 'Amazing Kids';
+  src: local('Amazing Kids'), url(./fonts/Amazing\ Kids.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo {
+    @apply font-amazingKids text-lg md:text-3xl text-white;
+  }
+
+  .mobile-menu {
+    @apply flex flex-col items-center gap-[10px] md:hidden;
+  }
+
+  .desktop-menu {
+    @apply hidden md:flex md:flex-row md:items-center md:gap-[10px];
+  }
 }
