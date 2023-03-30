@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <motion.div className="h-full max-w-full bg-primary px-4 md:px-20 pb-24">
+    <motion.div className="h-full max-w-full bg-primary px-4 md:px-20 md:pb-20 lg:pb-20 xl:pb-0">
       <Navbar />
       <motion.header
         className="grid md:grid-cols-2 mt-8"
