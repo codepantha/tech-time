@@ -23,6 +23,7 @@ const Courses = () => {
 
   return (
     <motion.section
+      id="courses"
       className="courses"
       whileInView={{ x: [-100, 0] }}
       transition={{ duration: 0.5, delay: 0.75 }}

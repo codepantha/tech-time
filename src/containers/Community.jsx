@@ -6,6 +6,7 @@ import scaleVariants from '../constants/variant';
 
 const Community = () => (
   <motion.section
+    id="community"
     className="community-section"
     whileInView={{ x: [-100, 0] }}
     transition={{ duration: 0.5 }}

@@ -1,6 +1,6 @@
 import { Sponsors } from './components';
 import {
-  About, Community, Courses, FAQs, Header, Testimonials,
+  About, Community, Courses, FAQs, Footer, Header, Testimonials,
 } from './containers';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Testimonials />
       <Community />
       <FAQs />
+      <Footer />
     </div>
   );
 }

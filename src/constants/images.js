@@ -41,6 +41,11 @@ import clock from '../assets/clock.png';
 import menu from '../assets/menu.png';
 import community from '../assets/community.png';
 import redSquiggly from '../assets/redSquiggly.png';
+import fb from '../assets/fb.png';
+import twi from '../assets/twi.png';
+import youtube from '../assets/youtube.png';
+import insta from '../assets/insta.png';
+import discord from '../assets/discord.png';
 
 const images = {
   arrowOutward,
@@ -86,6 +91,11 @@ const images = {
   menu,
   community,
   redSquiggly,
+  fb,
+  twi,
+  youtube,
+  insta,
+  discord,
 };
 
 export default images;
