@@ -40,6 +40,7 @@ import author from '../assets/author.png';
 import clock from '../assets/clock.png';
 import menu from '../assets/menu.png';
 import community from '../assets/community.png';
+import redSquiggly from '../assets/redSquiggly.png';
 
 const images = {
   arrowOutward,
@@ -84,6 +85,7 @@ const images = {
   clock,
   menu,
   community,
+  redSquiggly,
 };
 
 export default images;

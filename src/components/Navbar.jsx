@@ -18,7 +18,7 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
           className="md:hidden"
         >
-          <motion.button
+          <motion.div
             whileHover={{ scale: 1.2, rotate: 90 }}
             whileTap={{
               scale: 0.8,
@@ -32,7 +32,7 @@ const Navbar = () => {
             ) : (
               <BiMenu className="text-white" fontSize={24} />
             )}
-          </motion.button>
+          </motion.div>
         </button>
         <ul className="desktop-menu">
           <li className="text-white hover:text-white">
