@@ -1,5 +1,7 @@
 import { Sponsors } from './components';
-import { About, Courses, Header } from './containers';
+import {
+  About, Courses, Header, Testimonials,
+} from './containers';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Sponsors />
       <About />
       <Courses />
+      <Testimonials />
     </div>
   );
 }
