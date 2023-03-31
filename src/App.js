@@ -1,5 +1,5 @@
 import { Sponsors } from './components';
-import { About, Header } from './containers';
+import { About, Courses, Header } from './containers';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <Sponsors />
       <About />
+      <Courses />
     </div>
   );
 }
