@@ -11,16 +11,25 @@ const Courses = () => {
 
   const [filteredCourses, setFilteredCourses] = useState(coursesData);
 
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   const handleFilter = (category) => {
-    if (category === 'All Categories') {
-      setFilteredCourses(coursesData);
-      return;
-    }
-    setFilteredCourses(coursesData.filter((course) => course.category === category));
+    setAnimateCard({ y: 100, opacity: 0 });
+
+    setTimeout(() => {
+      setAnimateCard({ y: 0, opacity: 1 });
+
+      if (category === 'All Categories') return setFilteredCourses(coursesData);
+      return setFilteredCourses(coursesData.filter((course) => course.category === category));
+    }, 500);
   };
 
   return (
-    <motion.section className="courses">
+    <motion.section
+      className="courses"
+      whileInView={{ x: [-100, 0] }}
+      transition={{ duration: 0.5, delay: 0.75 }}
+    >
       <motion.div className="text-center">
         <h2>Browse our popular courses</h2>
         <p className="text-neutral text-[10px] md:text-[16px] md:leading-7 w-3/5 m-auto">
@@ -53,7 +62,11 @@ const Courses = () => {
         </motion.ul>
       </motion.div>
 
-      <motion.section className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-14">
+      <motion.section
+        className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-14"
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+      >
         {filteredCourses.map((course) => (
           <CourseCard key={uuidv4()} course={course} />
         ))}

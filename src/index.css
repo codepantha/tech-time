@@ -76,12 +76,12 @@
   }
 
   .course-card {
-    @apply px-2 py-[15px] md:p-4 bg-white rounded-lg;
+    @apply px-2 py-[15px] md:p-4 bg-white rounded-lg shadow-md hover:shadow-lg hover:cursor-pointer;
   }
 
   .course-card .badge {
     @apply bg-badgeBg/20 py-[2px] px-[8px] md:py-1 md:px-5 rounded-2xl
-    text-badgeBg font-bold text-[8px] md:text-xs;
+      text-badgeBg font-bold text-[8px] md:text-xs;
   }
 
   .course-title h3 {
