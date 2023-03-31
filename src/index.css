@@ -52,10 +52,11 @@
   }
 
   .about-section .card {
-    @apply bg-white flex justify-center items-center gap-4 h-[72px] md:w-[200px] rounded shadow-md; }
+    @apply bg-white flex justify-center items-center gap-4 h-[72px] md:w-[200px] rounded shadow-md;
+  }
 
   .crown {
-    @apply w-11 absolute -top-0 -left-8;
+    @apply w-11 absolute -top-4 md:-top-0 md:-left-8;
   }
 
   .crown img {

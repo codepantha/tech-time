@@ -6,8 +6,13 @@ import images from '../constants/images';
 
 const About = () => {
   const cardImages = [images.audio, images.live, images.recorded, images.notes];
+
   return (
-    <motion.section className="about-section">
+    <motion.section
+      className="about-section"
+      whileInView={{ x: [-100, 0] }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="relative text-center md:text-left">
         <h2 className="font-clash font-bold text-[56px] leading-[70px] text-[#000f24] md:pt-8">
           high quality video, audio & live classes
@@ -28,7 +33,7 @@ const About = () => {
           View Courses
         </button>
 
-        <div className="w-1/12 absolute bottom-52 md:-top-6 right-0 md:-right-[390px] lg:-right-[540px]">
+        <div className="w-1/12 absolute bottom-52 md:-top-6 right-0 md:-right-[390px] lg:-right-[500px]">
           <img src={images.squiggly} alt="squiggly" className="w-full" />
         </div>
 
@@ -41,13 +46,17 @@ const About = () => {
           ].map((item, i) => (
             <div className="card" key={uuidv4()}>
               <img src={cardImages[i]} alt="audio" />
-              <p className="text-xs md:text-[16px]">{item}</p>
+              <p className="text-xs md:text-[16px] font-bold">{item}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="about-section-right relative mt-4">
+      <motion.div
+        className="about-section-right relative mt-4"
+        whileInView={{ y: [-100, 20], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <div className="relative">
           <div className="md:w-3/4 ml-auto relative z-10">
             <img
@@ -66,11 +75,11 @@ const About = () => {
           <div className="md:w-1/6 absolute -bottom-8 right-0">
             <img src={images.droplets} alt="droplets" className="w-[91px]" />
           </div>
-          <div className="absolute md:-bottom-16 md:right-32">
+          <div className="absolute md:-bottom-16 -bottom-10 right-32">
             <img src={images.dot} alt="dot" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };
