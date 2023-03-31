@@ -50,7 +50,7 @@ const Courses = () => {
                 }}
                 className={`${
                   active === category ? 'text-primary bg-white' : 'text-neutral'
-                } text-[10px] md:text-[16px] py-3 px-2 md:px-4`}
+                } text-[10px] md:text-[16px] py-3 px-2 md:px-4 hover:bg-white`}
               >
                 {category}
               </button>
