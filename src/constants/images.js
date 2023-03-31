@@ -15,6 +15,16 @@ import stripe from '../assets/stripe.png';
 import monday from '../assets/monday.png';
 import slack from '../assets/slack.png';
 import dropbox from '../assets/dropbox.png';
+import crown from '../assets/crown.png';
+import audio from '../assets/audio.png';
+import live from '../assets/live.png';
+import recorded from '../assets/recorded.png';
+import notes from '../assets/notes.png';
+import img1 from '../assets/img1.png';
+import img2 from '../assets/img2.png';
+import squiggly from '../assets/squiggly.png';
+import droplets from '../assets/droplets.png';
+import dot from '../assets/dot.png';
 
 const images = {
   arrowOutward,
@@ -34,6 +44,16 @@ const images = {
   monday,
   slack,
   dropbox,
+  crown,
+  audio,
+  live,
+  recorded,
+  notes,
+  img1,
+  img2,
+  squiggly,
+  droplets,
+  dot,
 };
 
 export default images;
