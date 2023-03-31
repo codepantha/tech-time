@@ -27,6 +27,7 @@ const About = () => {
   return (
     <>
       <motion.section
+        id="about"
         className="about-section"
         whileInView={{ x: [-100, 0] }}
         transition={{ duration: 0.5 }}

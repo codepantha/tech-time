@@ -16,7 +16,9 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import images from '../constants/images';
 
 const Testimonials = () => (
-  <motion.section className="testimonial-section mt-20"
+  <motion.section
+    id="testimonials"
+    className="testimonial-section mt-20"
     whileInView={{ x: [-100, 0] }}
     transition={{ duration: 0.5 }}
   >
