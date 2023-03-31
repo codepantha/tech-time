@@ -46,7 +46,7 @@ const About = () => {
 
           <button
             type="button"
-            className="rounded bg-primary text-white leading-5 py-4 px-8 mt-8 mb-6"
+            className="blue-button"
           >
             View Courses
           </button>

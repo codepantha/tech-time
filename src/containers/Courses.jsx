@@ -6,11 +6,8 @@ import { CourseCard } from '../components';
 
 const Courses = () => {
   const categories = ['All Categories', 'Design', 'Development', 'Marketing'];
-
   const [active, setActive] = useState('All Categories');
-
   const [filteredCourses, setFilteredCourses] = useState(coursesData);
-
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   const handleFilter = (category) => {
@@ -71,6 +68,8 @@ const Courses = () => {
           <CourseCard key={uuidv4()} course={course} />
         ))}
       </motion.section>
+
+      <button type="button" className="blue-button mx-auto block">Explore All Courses</button>
     </motion.section>
   );
 };

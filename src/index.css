@@ -91,6 +91,10 @@
   .course-title .lesson-duration {
     @apply flex items-center gap-3 text-neutral font-medium text-xs md:text-[16px];
   }
+
+  .blue-button {
+    @apply rounded bg-primary text-white leading-5 py-4 px-8 mt-8 mb-6;
+  }
 }
 
 @media screen and (max-width: 768px) {
