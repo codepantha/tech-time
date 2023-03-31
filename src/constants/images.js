@@ -25,6 +25,11 @@ import img2 from '../assets/img2.png';
 import squiggly from '../assets/squiggly.png';
 import droplets from '../assets/droplets.png';
 import dot from '../assets/dot.png';
+import boy from '../assets/boy.png';
+import mentor from '../assets/mentor.png';
+import meeting1 from '../assets/meeting1.png';
+import meeting2 from '../assets/meeting2.png';
+import affordable from '../assets/affordable.png';
 
 const images = {
   arrowOutward,
@@ -54,6 +59,11 @@ const images = {
   squiggly,
   droplets,
   dot,
+  boy,
+  mentor,
+  meeting1,
+  meeting2,
+  affordable,
 };
 
 export default images;
