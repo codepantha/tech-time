@@ -95,6 +95,14 @@
   .blue-button {
     @apply rounded bg-primary text-white leading-5 py-4 px-8 mt-8 mb-6;
   }
+
+  .testimonial {
+    @apply shadow-md bg-white p-4 mr-4 rounded-lg;
+  }
+
+  .testimonial p {
+    @apply text-xs leading-[14px] md:text-sm text-neutral;
+  }
 }
 
 @media screen and (max-width: 768px) {
