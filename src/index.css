@@ -117,6 +117,14 @@
     @apply blue-button bg-white text-sm md:text-[16px] text-primary font-bold
       shadow-md hover:bg-secondaryText hover:text-white;
   }
+
+  .faq-section {
+    @apply max-w-full h-full px-4 text-center md:px-20 pt-24 bg-white;
+  }
+
+  .faq-section h2 {
+    @apply text-2xl leading-[29.5px] md:text-[52px] md:leading-[68px] font-bold text-[#000f24];
+  }
 }
 
 @media screen and (max-width: 768px) {
