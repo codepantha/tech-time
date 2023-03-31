@@ -25,6 +25,20 @@ import img2 from '../assets/img2.png';
 import squiggly from '../assets/squiggly.png';
 import droplets from '../assets/droplets.png';
 import dot from '../assets/dot.png';
+import boy from '../assets/boy.png';
+import mentor from '../assets/mentor.png';
+import meeting1 from '../assets/meeting1.png';
+import meeting2 from '../assets/meeting2.png';
+import affordable from '../assets/affordable.png';
+import course1 from '../assets/course1.png';
+import course2 from '../assets/course2.png';
+import course3 from '../assets/course3.png';
+import course4 from '../assets/course4.png';
+import course5 from '../assets/course5.png';
+import course6 from '../assets/course6.png';
+import author from '../assets/author.png';
+import clock from '../assets/clock.png';
+import menu from '../assets/menu.png';
 
 const images = {
   arrowOutward,
@@ -54,6 +68,20 @@ const images = {
   squiggly,
   droplets,
   dot,
+  boy,
+  mentor,
+  meeting1,
+  meeting2,
+  affordable,
+  course1,
+  course2,
+  course3,
+  course4,
+  course5,
+  course6,
+  author,
+  clock,
+  menu,
 };
 
 export default images;
