@@ -1,6 +1,6 @@
 import { Sponsors } from './components';
 import {
-  About, Courses, Header, Testimonials,
+  About, Community, Courses, Header, Testimonials,
 } from './containers';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <About />
       <Courses />
       <Testimonials />
+      <Community />
     </div>
   );
 }
