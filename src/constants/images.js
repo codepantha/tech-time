@@ -39,6 +39,7 @@ import course6 from '../assets/course6.png';
 import author from '../assets/author.png';
 import clock from '../assets/clock.png';
 import menu from '../assets/menu.png';
+import community from '../assets/community.png';
 
 const images = {
   arrowOutward,
@@ -82,6 +83,7 @@ const images = {
   author,
   clock,
   menu,
+  community,
 };
 
 export default images;
