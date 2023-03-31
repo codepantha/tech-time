@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import images from '../constants/images';
+import scaleVariants from '../constants/variant';
 
 const Footer = () => (
-  <motion.footer className="footer grid md:grid-cols-4 gap-6">
+  <motion.footer
+    variants={scaleVariants}
+    whileInView={scaleVariants.whileInView}
+    className="footer grid md:grid-cols-4 gap-6"
+  >
     <div>
       <span className="logo">
         TechTime
